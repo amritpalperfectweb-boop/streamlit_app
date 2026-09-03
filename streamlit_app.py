@@ -7,8 +7,8 @@ import pandas as pd
 # CONFIGURATION
 # ============================================================
 
-API_URL = "http://127.0.0.1:8000/emails/process-eml"
-OCR_API_URL = "http://127.0.0.1:8000/emails/extract-text"
+API_URL = "https://confider-atom-resonate.ngrok-free.dev/emails/process-eml"
+OCR_API_URL = "https://confider-atom-resonate.ngrok-free.dev/emails/extract-text"
 
 
 # ============================================================
