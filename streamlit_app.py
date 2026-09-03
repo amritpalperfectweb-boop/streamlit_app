@@ -7,8 +7,8 @@ import pandas as pd
 # CONFIGURATION
 # ============================================================
 
-API_URL = "https://confider-atom-resonate.ngrok-free.dev/emails/process-eml"
-OCR_API_URL = "https://confider-atom-resonate.ngrok-free.dev/emails/extract-text"
+API_URL = "http://127.0.0.1:8000/emails/process-eml"
+OCR_API_URL = "http://127.0.0.1:8000/emails/extract-text"
 
 
 # ============================================================
@@ -167,7 +167,6 @@ def render_location(location, label):
         f"""
         <div class="info-card">
             <div class="info-label">{label}</div>
-            <div class="info-value">{company}</div>
             <div class="location-address">{address}</div>
             <div class="location-address">
                 {city}, {country}
@@ -271,7 +270,7 @@ def render_logistics_data(logistics_data):
 
             cargo_rows.append(
                 {
-                    "#": index,
+      
                     "Description": item.get(
                         "name_or_description",
                         "-"
